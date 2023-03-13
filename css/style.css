@@ -26,6 +26,17 @@ body {
     box-sizing: border-box;
 }
 
+/* HEADLINE */
+h1 {
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+
+.headline p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
 /* NAV */
 nav {
     height: 25px;
@@ -58,6 +69,10 @@ nav {
     color: var(--main-color);
     border-top: 2px var(--main-color) solid;
 }
+
+
+/* HEADLINE */
+
 
 
 /* CARDS */
@@ -164,7 +179,7 @@ footer {
 }
 
 .footer1, .footer2, .footer3 {
-    padding-left: 20px;
+    padding-left: 25px;
     list-style: none;
     margin-right: auto;
 }
