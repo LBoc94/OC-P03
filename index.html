@@ -16,7 +16,7 @@
 
 <body>
     <div class="main-container">
-<!-- xx HEADER start -->
+<!-- xx header -->
         <header>
             <nav>
                 <a class="logo" href="index.html">
@@ -30,17 +30,32 @@
         </header>
 
         <main>
-  <!-- ** TO DO SECTION RECHERCHE start -->          
-            <div class="info-group">
-                <section class="headline">
+<!-- ** TO DO SECTION RECHERCHE start -->          
+            <section class="info-group">
+                <article class="headline">
                     <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                     <p>En plein centre-ville ou en nature</p>
-                </section>
+                </article>
 
-                <section class="search-bar">
+                <article class="search-bar">
+                    <form method="get" action="" role="search">
+                        <input type="button" value="Localisation">
+                        <input type="search" id="textarea" name="q" placeholder="Marseille, France">
+                        <input type="submit" value="Rechercher">
+                    </form>
+                </article>
 
-                </section>
-            </div>
+                <article class="filtres">
+                    <ul>
+                        <h2>Filtres</h2>
+                        <li><a href="#"><i class="fa-solid fa-money-bill-wave"></i>Économique</li></a>
+                        <li><a href="#"><i class="fa-solid fa-person"></i>Familial</li></a>
+                        <li><a href="#"><i class="fa-solid fa-heart"></i>Romantique</li></a>
+                        <li><a href="#"><i class="fa-solid fa-fire"></i>Nos pépites</li></a>
+                    </ul>
+                </article>
+            </section>
+
 <!-- ** TO DO SECTION HEBERGEMENTS start -->
             <div class="hebergements-and-populaires">
 
@@ -113,9 +128,9 @@
             </div>
 
 <!-- ** TO DO SECTION ACTIVITES start -->
-
         </main>
 
+<!-- xx footer -->
         <footer>
             <ul class="footer1">
                 <h2>À propos</h2>

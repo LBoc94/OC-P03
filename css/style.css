@@ -10,9 +10,6 @@
     --filter-bg-color: #DEEBFF;
 }
 
-.fa-solid {
-    color: var(--main-color);
-}
 
 body {
     display: flex;
@@ -26,20 +23,15 @@ body {
     box-sizing: border-box;
 }
 
-/* HEADLINE */
-h1 {
-    font-size: 25px;
-    margin-bottom: 0px;
+.fa-solid {
+    color: var(--main-color);
 }
 
-.headline p {
-    font-size: 18px;
-    margin-top: 10px;
-}
 
 /* NAV */
 nav {
-    height: 25px;
+    margin: 0px -25px;
+    height: 20px;
     padding: 30px 0px;
     display: flex;
     flex-direction: row;
@@ -71,9 +63,73 @@ nav {
 }
 
 
+/* ---SECTION 1 RECHERCHE--- */
+
 /* HEADLINE */
+h1 {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 0px;
+}
+
+.headline p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 10px;
+}
 
 
+/* SEARCHBAR */
+/* #textarea {
+    border-width: 1px 0px 1px 0px;
+    border-style: solid;
+    border-color: var(--main-bg-color);
+    height: 50px;
+} */
+
+/* FILTRES */
+.filtres ul {
+    /* background-color: red; */
+    list-style: none;
+    padding: 0px;
+    height: 50px;
+    width: 750px;
+    display: flex;
+    flex: row wrap;
+    align-items: center;
+    justify-content: space-between;  
+}
+
+.filtres h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.filtres a {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+}
+
+.filtres i {
+    color: var(--main-color);
+    padding-right: 12px;
+}
+
+.filtres li {
+    border : 2px solid var(--filter-bg-color);
+    border-radius: 25px;
+    padding: 12px 18px;
+}
+
+.filtres li:hover {
+    background-color: var(--filter-bg-color);
+}
+
+
+
+/* ---SECTION 2 HEBERGEMENTS--- */
 
 /* CARDS */
 .section-title {
