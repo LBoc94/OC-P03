@@ -77,12 +77,45 @@ h1 {
 
 
 /* SEARCH-BAR */
+
+#location {
+    background-color: var(--main-bg-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 15px 0px 0px 15px;
+    border-style: none;
+}
+
+#location i {
+    font-size: 18px;
+    color: black;
+}
+
+
 #textarea {
     border-width: 1px 0px 1px 0px;
     border-style: solid;
     border-color: var(--main-bg-color);
     height: 50px;
+    width: 180px;
+    margin: 0px -4px 0px -4px;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    text-align: center;
 }
+
+#submit {
+    background-color: var(--main-color);
+    height: 50px;
+    width: 130px;
+    border-radius: 0px 15px 15px 0px;
+    border-style: none;
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
 
 /* FILTRES */
 .filtres h2 {
