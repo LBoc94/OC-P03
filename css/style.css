@@ -500,12 +500,13 @@ footer {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: stretch;
     }
 
     .navlinks a {
         margin-left: 0px;
         padding: 0px 0px 13px 0px;
+        width: 50%;
+        border-bottom: 2px var(--main-bg-color) solid;
     }
 
     .navlinks a:hover {
