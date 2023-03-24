@@ -376,6 +376,7 @@ h1 {
     width: 23%;
     height: 440px;
     padding: 0px;
+    display: flex;
 }
 
 .activites-cards img {
@@ -386,9 +387,19 @@ h1 {
 
 .acti-card-content {
     padding: 0px 10px 0px 20px;
+    display: flex;
+    align-items: center;
+    height: 60px;
 }
 
+.acti-card-content h3 {
+    margin: 0px;
+}
 
+.teeest {
+    display: flex;
+    flex-direction: column;
+}
 
 /*********** FOOTER ***********/
 footer {
@@ -484,10 +495,11 @@ footer {
     }
 
     .activites-cards img {
-        height: 190px;
+        height: 200px;
     }
 
     .activites-cards .card-content {
+        height: 65px;
         padding-left: 14px;
         padding-right: 14px;
     }
@@ -657,6 +669,10 @@ footer {
 
     .activites-cards img {
         height: 145px;
+    }
+
+    .acti-card-content {
+        height: 55px;
     }
 
 /* FOOTER */
