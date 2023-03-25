@@ -34,7 +34,7 @@ a {
 
 
 /********* NAV *********/
-nav {
+.header-nav {
     margin: 0px -25px;
     height: 20px;
     padding: 30px 0px;
@@ -43,16 +43,16 @@ nav {
     justify-content: space-between;
 }
 
-.logo img {
+.logo {
     width: 40%;
 }
 
-.navlinks {
+.navigation {
     position: relative;
     bottom: 25px;
 }
 
-.navlinks a {
+.nav-link {
     text-decoration: none;
     color: black;
     display: inline-block;
@@ -61,7 +61,7 @@ nav {
     border: 2px solid transparent;
 }
 
-.navlinks a:hover {
+.nav-link:hover {
     color: var(--main-color);
     border-top: 2px var(--main-color) solid;
 }
@@ -80,7 +80,7 @@ h1 {
     margin-bottom: 0px;
 }
 
-.headline p {
+.headline-text {
     font-size: 1.1em;
     margin-top: 8px;
 }
@@ -89,10 +89,9 @@ h1 {
 /* SEARCH-BAR */
 .search-bar {
     margin-bottom: 30px;
-    
 }
 
-.sb {
+.search-buttons {
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -112,7 +111,7 @@ h1 {
     color: black;
 }
 
-#textarea {
+#text-area {
     border-width: 1px 0px 1px 0px;
     border-style: solid;
     border-color: var(--main-bg-color);
@@ -141,21 +140,21 @@ h1 {
 }
 
 
-/* FILTRES */
-.filtres {
+/* FILTER-BAR */
+.filter-bar {
     margin-bottom: 30px;
     display: flex;
     flex-flow: row wrap;
     gap: 15px;
 }
 
-.filtres h2 {
+.filtres-title {
     font-size: 1.1em;
     font-weight: bold;
     padding: 0px;
 }
 
-.filtres button {
+.filters-button {
     border: 2px solid var(--filter-bg-color);
     border-radius: 25px;
     margin-right: 10px;
@@ -166,17 +165,17 @@ h1 {
     cursor: pointer;
 }
 
-.filtres button:hover {
+.filters-button:hover {
     background-color: var(--filter-bg-color);
 }
 
-.filtres i {
+.filters-button i {
     color: var(--main-color);
     padding-right: 12px;
 }
 
-/* INFOBAR */
-.infobar {
+/* INFO-BAR */
+.info-bar {
     margin-bottom: 37px;
 }
 
@@ -215,18 +214,18 @@ h1 {
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-.card a{
+.card-click {
     display: block; 
     height: 100%; 
     width: 100%;
 }
 
-.card p {
-    font-size: 0.9em;
+.card-img {
+    object-fit: cover;
 }
 
-.card img {
-    object-fit: cover;
+.card p {
+    font-size: 0.9em;
 }
 
 .card-title {
@@ -261,7 +260,7 @@ h1 {
     height: 200px; 
 }
 
-.hebergements-cards img {
+.hebergements-cards .card-img {
     width: 100%;
     height: 115px;
     border-radius: 20px 20px 0px 0px;
@@ -295,9 +294,6 @@ h1 {
 .show-more {
     margin-top: 20px;
     padding-top: 6px;
-}
-
-.show-more a {
     font-size: 1.1em;
     font-weight: bold;
 }
@@ -324,7 +320,7 @@ h1 {
     margin-top: 33px;
 }
 
-.populaires-cards img {
+.populaires-cards .card-img {
     width: 33%;
     height: 134px;
     border-top-left-radius: 20px;
@@ -353,7 +349,7 @@ h1 {
     margin-bottom: 5px;
 }
 
-.teest {
+.card-pop-img-txt {
     display: flex;
     flex: row;
 }
@@ -379,7 +375,7 @@ h1 {
     display: flex;
 }
 
-.activites-cards img {
+.activites-cards .card-img {
     width: 100%;
     height: 380px;
     border-radius: 20px 20px 0px 0px;
@@ -396,7 +392,7 @@ h1 {
     margin: 0px;
 }
 
-.teeest {
+.card-acti-img-txt {
     display: flex;
     flex-direction: column;
 }
@@ -410,20 +406,21 @@ footer {
     justify-content: space-evenly;
 }
 
-.footer1, .footer2, .footer3 {
+.footer-about, .footer-hebergements, .footer-assistance {
     list-style: none;
     padding-left: 25px;
     margin-right: auto;
 }
 
-.footer1 a, .footer2 a, .footer3 a {
+.footer-link {
     text-decoration: none;
     color: black;
     line-height: 1.8em;
 }
 
-.footer1 h2, .footer2 h2, .footer3 h2 {
+.footer-title {
     font-size: 1.1em;
+    font-weight: bold;
 }
 
 
@@ -433,11 +430,11 @@ footer {
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
 /* INFO-BAR */
-    .filtres {
+    .filter-bar {
         flex-direction: column;
     }
 
-    .filtres h2 {
+    .filtres-title {
         margin: 0px;
     }
 
@@ -476,7 +473,7 @@ footer {
         display: flex;
     }
 
-    .populaires-cards img {
+    .populaires-cards .card-img {
         width: 30%;
     }
 
@@ -494,7 +491,7 @@ footer {
         height: 265px;
     }
 
-    .activites-cards img {
+    .activites-cards .card-img {
         height: 200px;
     }
 
@@ -512,7 +509,7 @@ footer {
     }
 
  /* NAVIGATION */
-    nav {
+    .header-nav {
         margin: 0px;
         padding: 30px 0px 0px 0px;
         height: 90px;
@@ -521,26 +518,26 @@ footer {
         text-align: center;
     }
 
-    .logo img {
+    .logo {
         width: 20%;
         position: static;
     }
 
-    .navlinks {
+    .navigation {
         position: static;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .navlinks a {
+    .nav-link {
         margin-left: 0px;
         padding: 0px 0px 13px 0px;
         width: 50%;
         border-bottom: 2px var(--main-bg-color) solid;
     }
 
-    .navlinks a:hover {
+    .nav-link:hover {
         border-top: none;
         border-bottom: 2px var(--main-color) solid;
     }
@@ -554,11 +551,11 @@ footer {
         font-size: 1.4em;
     }
 
-    .headline p {
+    .headline-text {
         font-size: 1em;
     }
     
-    #textarea {
+    #text-area {
         width: 235px;
     }
 
@@ -582,16 +579,16 @@ footer {
         color: white;
     }
     
-/* FILTRES */
-    .filtres {
+/* FILTER-BAR */
+    .filter-bar {
         margin-bottom: 0px;
     }
 
-    .filtres h2 {
+    .filtres-title {
         margin-bottom: 7px;
     }
 
-    .filtres button {
+    .filters-button {
         font-size: 0.9em;
         margin-right: 0px;
         display: flex;
@@ -599,19 +596,19 @@ footer {
         margin-bottom: 20px;
     }
 
-    .filtres i {
+    .filters-button i {
         color: var(--main-color);
         padding-right: 12px;
         font-size: 1.3em;
     }
     
-    .filtres-buttons {
+    .filters {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
     }
 
-    .infobar {
+    .info-bar {
         margin-bottom: 13px;
     }
 
@@ -667,7 +664,7 @@ footer {
         width: 100%;
     }
 
-    .activites-cards img {
+    .activites-cards .card-img {
         height: 145px;
     }
 
@@ -681,7 +678,7 @@ footer {
         flex-direction: column;
     }
 
-    .footer1 h2, .footer2 h2, .footer3 h2 {
+    .footer-title {
         font-size: 1.2em;
     }
 }
