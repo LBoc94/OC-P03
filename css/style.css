@@ -253,7 +253,6 @@ h1 {
 .hebergements-cards .card {
     margin-top: 32px;
     width: 30%;
-    height: 200px; 
 }
 
 .hebergements-cards .card-img {
@@ -270,12 +269,13 @@ h1 {
 }
 
 .hebergements-cards .card-title {
-    margin-top: 10px;
-    margin-bottom: 4px;
+    margin-top: 5px;
+    margin-bottom: 6px;
 }
 
 .hebergements-cards .card-rating {
-    margin-top: 6px;
+    margin-top: 5px;
+    padding-bottom: 4px;
 }
 
 .hebergements-cards .card-rating .fa-star {
@@ -405,12 +405,6 @@ footer {
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
-/* long cards */
-@media (min-width: 1024px) and (max-width: 1121px) {
-    .long-card {
-        line-height: 14px;
-    }
-}
 
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
